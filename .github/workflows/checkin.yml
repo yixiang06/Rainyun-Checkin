@@ -28,7 +28,22 @@ jobs:
     - name: 运行
       run: python -u rainyun.py
       env:
+        # 账号密码
         RAINYUN_USER: ${{ secrets.RAINYUN_USER }}
         RAINYUN_PWD: ${{ secrets.RAINYUN_PWD }}
+        # # 推送服务配置 - Server酱 PUSH_KEY
         PUSH_KEY: ${{ secrets.PUSH_KEY }}
-        # TIMEOUT: ${{ secrets.TIMEOUT }}
+        
+        # 运行配置
+        TIMEOUT: ${{ secrets.TIMEOUT }}
+        MAX_DELAY: ${{ secrets.Max_DELAY }}
+
+        # 服务器管理功能
+        # 雨云密钥
+        RAINYUN_API_KEY: ${{ secrets.RAINYUN_API_KEY }}
+        # 自动续费开关 (true/false)
+        AUTO_RENEW: ${{ secrets.AUTO_RENEW }}
+        # 续费触发阈值：剩余多少天时触发续费 (默认7天)
+        RENEW_THRESHOLD_DAYS: ${{ secrets.RENEW_THRESHOLD_DAYS }}
+        # 续费白名单：只续费指定的产品ID (逗号分隔，留空则续费所有)
+        RENEW_PRODUCT_IDS: ${{ secrets.RENEW_PRODUCT_IDS }}
