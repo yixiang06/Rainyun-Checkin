@@ -6,7 +6,8 @@ on:
     workflow_dispatch:
     # 定时执行
     schedule:
-      - cron: '0 10 * * *'
+      # 北京时间上午 10点 执行
+      - cron: '0 2 * * *'
 
 # 工作
 jobs:
