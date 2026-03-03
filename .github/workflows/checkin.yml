@@ -28,6 +28,8 @@ jobs:
     - name: 运行
       run: python -u rainyun.py
       env:
+        # 设置系统时区为上海
+        TZ: Asia/Shanghai
         # 账号密码
         RAINYUN_USER: ${{ secrets.RAINYUN_USER }}
         RAINYUN_PWD: ${{ secrets.RAINYUN_PWD }}
