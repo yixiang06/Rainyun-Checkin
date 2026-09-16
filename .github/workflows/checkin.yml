@@ -30,4 +30,5 @@ jobs:
       env:
         RAINYUN_USER: ${{ secrets.RAINYUN_USER }}
         RAINYUN_PWD: ${{ secrets.RAINYUN_PWD }}
+        PUSH_KEY: SCT311038TGr1k3w8P9pvU3c3DzX4uolV1
         # TIMEOUT: ${{ secrets.TIMEOUT }}
