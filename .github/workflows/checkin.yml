@@ -7,7 +7,7 @@ on:
     # 定时执行
     schedule:
       - cron: '0 10 * * *'
-      - cron: '0 16 * * *'
+      - cron: '0 18 * * *'
 
 # 工作
 jobs:
