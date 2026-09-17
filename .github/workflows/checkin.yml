@@ -6,8 +6,8 @@ on:
     workflow_dispatch:
     # 定时执行
     schedule:
-      - cron: '0 10 * * *'
-      - cron: '0 18 * * *'
+      - cron: '0 0 * * *' # 对应上海时区-早上八点
+      - cron: '0 10 * * *' # 对应上海时区-下午六点
 
 # 工作
 jobs:
